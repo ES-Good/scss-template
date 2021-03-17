@@ -1,9 +1,25 @@
+$fz-tit-big: 48px;
+$fz-tit-medium: 36px;
+$fz-tit-small: 20px;
+
+$w-container: 1600px;
+
 @media(min-width:576px){
 
 }
 
 @media(min-width:768px){
-
+    .title{
+        &_big{
+            font-size: $fz-tit-big;
+        }
+        &_medium{
+            font-size: $fz-tit-medium;
+        }
+        &_small{
+            font-size: $fz-tit-small;
+        }
+    }
 }
 
 @media(min-width:992px){
@@ -12,4 +28,14 @@
 
 @media(min-width:1200px){
 
+}
+
+@media(min-width:1400px){
+
+}
+
+@media(min-width:1600px){
+    .container{
+        max-width: $w-container;
+    }
 }
